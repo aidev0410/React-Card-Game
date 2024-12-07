@@ -1,0 +1,82 @@
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls input {
+    margin-left: 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.controls button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    position: relative;
+}
+
+.card.highlighted {
+    background-color: #ffeb3b;
+}
+
+.card.flipped {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.card .remove-button {
+    position: absolute;
+    bottom: 5px;
+    padding: 3px 5px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.card .remove-button:hover {
+    background-color: darkred;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.remove-instructions {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
